@@ -1,0 +1,48 @@
+﻿@page "/"
+@using Telerik.ReportViewer.Blazor
+
+<style>
+    .trv-report-viewer {
+        width: 1300px;
+        height: 880px;
+    }
+</style>
+
+@* Create the ReportViewerWidget *@
+
+<p>This Blazor Report Viewer instance displays reports hosted locally using the Reporting REST service. For more information, visit the <a target="_blank" href="https://docs.telerik.com/reporting/blazor-report-viewer">Blazor Report Viewer</a> article.</p>
+<button type="button" class="btn btn-light btn-sm" @onclick="RefreshReport">Refresh Report</button>
+<button type="button" class="btn btn-light btn-sm" @onclick="Print">Print Report</button>
+<ReportViewer @ref="reportViewer1"
+              ViewerId="rv1"
+              ServiceUrl="https://localhost:44305/api/reports"
+              ReportSource="@(new ReportSourceOptions
+                              {
+                                  Report = "TestGrid2.trdp",
+                                  //Parameters = new Dictionary<string, object>
+                                  //{
+                                  //    { "ProductCategory", "Clothing" },
+                                  //    { "ProductSubcategory", new [] { "Caps", "Gloves" } }
+                                  //}
+                              })"
+              Parameters="@(new ParametersOptions { Editors = new EditorsOptions { MultiSelect = EditorType.ComboBox, SingleSelect = EditorType.ComboBox } })"
+              ScaleMode="@(ScaleMode.Specific)"
+              Scale="1.0"
+              ClientEvents="@(new ClientEventsOptions() {
+                                  ExportBegin = "trvEventHandlers.exportBegin",
+                                  ExportEnd = "trvEventHandlers.exportEnd"
+                              })" />
+
+@code {
+    ReportViewer reportViewer1;
+
+    async void RefreshReport()
+    {
+        await reportViewer1.RefreshReportAsync();
+    }
+
+    async void Print()
+    {
+        await reportViewer1.Commands.Print.ExecuteAsync();
+    }
+}

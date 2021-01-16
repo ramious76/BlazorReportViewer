@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikReportBuildPackageLoader.Server", "TelerikReportBuildPackageLoader\Server\TelerikReportBuildPackageLoader.Server.csproj", "{AFCAD8CD-1437-426A-B40E-5CE9F3D9CE3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikReportBuildPackageLoader.Client", "TelerikReportBuildPackageLoader\Client\TelerikReportBuildPackageLoader.Client.csproj", "{885FEBC0-F94B-49E0-B87F-20F43F697134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikReportBuildPackageLoader.Shared", "TelerikReportBuildPackageLoader\Shared\TelerikReportBuildPackageLoader.Shared.csproj", "{80530CC1-8131-4CC7-A718-E1BBE2040BA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFCAD8CD-1437-426A-B40E-5CE9F3D9CE3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCAD8CD-1437-426A-B40E-5CE9F3D9CE3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCAD8CD-1437-426A-B40E-5CE9F3D9CE3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCAD8CD-1437-426A-B40E-5CE9F3D9CE3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885FEBC0-F94B-49E0-B87F-20F43F697134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885FEBC0-F94B-49E0-B87F-20F43F697134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885FEBC0-F94B-49E0-B87F-20F43F697134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885FEBC0-F94B-49E0-B87F-20F43F697134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80530CC1-8131-4CC7-A718-E1BBE2040BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80530CC1-8131-4CC7-A718-E1BBE2040BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80530CC1-8131-4CC7-A718-E1BBE2040BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80530CC1-8131-4CC7-A718-E1BBE2040BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F47C145-2A13-435D-ABE1-113BF8341D6A}
+	EndGlobalSection
+EndGlobal

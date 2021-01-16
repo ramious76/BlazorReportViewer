@@ -3,3 +3,12 @@
 ################################################################################
 
 /TelerikReportBuildPackageLoader/Client/bin/Debug/netstandard2.1/wwwroot/_framework/wasm
+/TelerikReportBuildPackageLoader/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin
+/TelerikReportBuildPackageLoader/Client/bin/Debug/netstandard2.1/wwwroot/_framework
+/TelerikReportBuildPackageLoader/Client/bin/Debug/netstandard2.1
+/TelerikReportBuildPackageLoader/Client/obj
+/TelerikReportBuildPackageLoader/Server/bin/Debug/netcoreapp3.1
+/TelerikReportBuildPackageLoader/Server/obj
+/TelerikReportBuildPackageLoader/Shared/bin/Debug/netstandard2.1
+/TelerikReportBuildPackageLoader/Shared/obj
+/.vs/TelerikReportBuildPackageLoader
